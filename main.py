@@ -50,25 +50,39 @@
 """
 
 
-class Teacher:
+# class Teacher:
     
-    def __init__(self, name, subject) -> None:
-        self.name = name
-        self.subject = subject
+#     def __init__(self, name, subject) -> None:
+#         self.name = name
+#         self.subject = subject
 
-    def info(self):
-        print(f'{self.name} предмет преподования {self.subject}')
+#     def info(self):
+#         print(f'{self.name} предмет преподования {self.subject}')
 
-class TeacherMath(Teacher):
-    pass
+# class TeacherMath(Teacher):
+#     pass
 
-class TeacherLang(Teacher):
-    def info(self):
-        print('Я сперва унаследовал!!!')
-        print(f' {self.name} предмет преподавания {self.subject}')
+# class TeacherLang(Teacher):
+#     def info(self):
+#         print('Я сперва унаследовал!!!')
+#         print(f' {self.name} предмет преподавания {self.subject}')
 
-teacher_math = TeacherMath(name ='Фибоначи', subject='Математика')
-teacher_lang = TeacherLang(name = 'Гвидо Ван Рассум', subject='Python')
+# teacher_math = TeacherMath(name ='Фибоначи', subject='Математика')
+# teacher_lang = TeacherLang(name = 'Гвидо Ван Рассум', subject='Python')
 
-teacher_math.info()
-teacher_lang.info()
+# teacher_math.info()
+# teacher_lang.info()
+
+"""
+4)
+"""
+class Vehicle:
+    def __init__(self, mark, model):
+        self.mark =mark
+        self.model = model
+
+    def start_engine(self):
+        print(f' {self.mark}-{self.model} заводись!')
+    
+car1 = Vehicle(mark='Tayota', model= 'Camry')
+car1.start_engine()
